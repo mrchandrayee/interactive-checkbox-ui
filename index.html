@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b13">
+  <title>Interactive Checkbox UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Interactive Checkbox UI</h1>
+
+    <nav class="tabs" aria-label="Checkbox styles">
+      <button class="tab active" data-style="classic">Classic Checkmark</button>
+      <button class="tab" data-style="bounce">Bounce Scale</button>
+      <button class="tab" data-style="slide">Slide Fill</button>
+      <button class="tab" data-style="morph">Circle Morph</button>
+      <button class="tab" data-style="ripple">Ripple Effect</button>
+      <button class="tab" data-style="toggle">Toggle Switch</button>
+    </nav>
+
+    <section class="preview-card" aria-live="polite">
+      <div id="checkbox-list" class="checkbox-list classic">
+        <label class="check-row"><input type="checkbox" checked><span class="box"></span><span>Read emails</span></label>
+        <label class="check-row"><input type="checkbox"><span class="box"></span><span>Review PR</span></label>
+        <label class="check-row"><input type="checkbox" checked><span class="box"></span><span>Deploy code</span></label>
+      </div>
+    </section>
+
+    <section class="source-card">
+      <div class="source-heading">CSS Source</div>
+      <pre><code id="source-code"></code></pre>
+    </section>
+    <p class="hint">Choose a style above, then click the checkboxes to try the interaction.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
